@@ -1,0 +1,116 @@
+		COMANDOS BÁSICOS JS
+
+	Necessário um corpo HTML para funcionar
+	Tem distinção entre MAISC & minus
+	Livre para usar (ou ñ) ";" ao final
+	typeof -> descubrir o tipo de var
+	var x = null -> variável vazia
+	Posso usar TAG html no JS
+
+	3 tipos -> "", '', ``
+	`` -> ${var} -> Ex: var nome = window.prompt('Qual é o seu nome?);
+			    alert(`Prazer, ${nome}! Seu nome tem ${nome.length} letras.`);
+	'' -> Modo padrão para inserir palavras
+
+window.alert() [alert()]-> Alerta com OK
+window.confirm() -> Janela Confirmar e Cancelar
+window.prompt() -> Janela com campo pra digitar
+	PROMPT EX: var nome = window.prompt('Qual é o seu Nome?');
+		  alert('Isso é um grande prazer" + nome + "!");
+document.write -> escrever no html
+n = n + 4 -> n += 4
+n = n **[pot]2 -> n **= 2
+n = n +[-] 1 -> n++ n-- -> o valor atribui depois	//Será feito somando 
+		++n --n -> atribui antes		//ou diminuindo 1
+
+5 == '5' -> true	5 == 5 -> true
+5 === '5' -> false 	5 === 5 -> true
+'===' -> identico
+aritméticos - relacionais - lógicos
+()+-/* % ** - < >= != - && || !
+			1º não -> ! / 2º e -> && / 3º ou -> ||
+
+OPERADOR TERNÁRIO: teste ? true : false
+
+		USO DE PONTO .SOMETHING
+
+var.toFixed(2) -> add 2 zeros após a virgula
+var.replace(".", ",") -> troca de caractere no resultado final
+var x = Number.parseInt(window.prompt('Qual sua idade?')
+	      .parseFloat
+		Number(windows...) // Vem como String normalmente, necessário conversão
+n.toString()	-> converte
+String(n)	-> para string
+		
+var.UpperCase() -> Caixa alta na var
+var.LowerCase() -> Caixa baixa na var
+
+n.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) -> R$ 0.000,00
+							'USD'	->  $ 0,000.00
+							'EUR'   ->  £ 0,000.00
+
+		O QUE É DOM?
+
+       	     Document Object Model
+
+			 Árvore DOM
+
+			   window
+		location; document; history
+		 	    html
+			 head;body
+	        meta; title|| h1; p; div
+				strong
+
+window = parent de document
+document = child de window e parent de html
+
+var p1 = window.document.getElementsByTagName('tag')[array] -> 0 = 1º tag, 1 = 2º tag
+document.write(p1.innerText) -> Somente texto sem child
+	      (p1.innerHTML) -> Texto com formatação dos child
+p1.style.color = 'blue' -> muda cor letra do elemento da var
+
+TAG -> .getElementsByTagName('')[]
+ID -> .getElementById('')
+Name -> .getElementByName('')[]
+Classe -> .getElementsByClass('')[]
+Seletor -> .querySelector('syntx de css')
+
+Eventos base Mouse -> mouseenter, mousemove, mouse down, mouseup, click, mouseout.
+
+html -> <div onmouseenter="entrar()">
+JS -> 	<script> n.addEventListener('mouseenter', entrar)
+
+No HTML usar input:number -> <input type="number">
+
+PEGAR HORA -> var agora = new Date
+	      var hora = agora.getHours() -> pega somente a hora
+	    //var hora = agora.getHours() + ":" + agora.getMinutes() -> Hora e minutos
+			 agora.getDay() -> 0 = Domingo e 6 = Sábado
+
+var img = document.createElement('img')		//o mesmo que -> <img id="foto>
+        img.setAttribute('id', 'foto')		// 'tipo', 'inserir dentro das aspas'
+n.appenChild -> add um elemento para visualizar no html
+
+	while (condição){}
+	do{}while(condição)
+	for(inicio;teste;incr){}
+
+	//U+1F449 	HTML -> &#x1F449;
+	EMOTICON	CSS -> tag::before{content: '\01F449';}
+      [unicode.org]	JS -> `\u{1F449}` ou String.fromCodePoint(0x1F449)
+
+		ARRAY
+
+	"Array é uma variável que tem vários Elementos e possuem um Valor de acordo com a Chave(indice)"
+
+	let num = [5, 8, 4] 	//inserir valores na var
+	num[3] = 6		//indicar explicitamente add valor
+	num.push(7)		//add valor do () no prox apos o ultimo indice
+	num.length		//descobrir quantos elementos [casas/tamanho]
+	num.sort()		//organizar os valores das chaves em ordem crescrente
+	num.indexOf(7)		//busca se há o valor, retorna a chave	
+	
+	for(var i in array){}	//roda crescrente o valor
+
+	

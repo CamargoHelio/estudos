@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex009</title>
+</head>
+<body>
+    <h1>Vocé é brasileiro?</h1>
+    Digite seu país: <input type="text" name="pais" id="txtpais" value="">
+    <input type="button" value="Verificar" onclick="verif()">
+    <div id="resul">
+
+    </div>
+    <script>
+        function verif(){
+            var pais = window.document.querySelector('input#txtpais').value.toUpperCase()
+            var resul = window.document.getElementById('resul')
+            console.log(pais)
+            resul.innerHTML = `<p>Você é de ${pais}</p>`
+            if(pais == 'BRASIL'){
+                resul.innerHTML += '<p>É brasileiro!</p>'
+            } 
+            else {
+                resul.innerHTML += '<p>É estrangeiro!</p>'
+            }
+        }
+    </script>
+
+</body>
+</html>

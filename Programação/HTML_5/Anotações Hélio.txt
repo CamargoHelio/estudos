@@ -1,0 +1,101 @@
+O navegador não fica dividindo enters ou muitos espaços, é necessário delmitar
+
+	-	H T M L	     -
+
+		DICAS
+
+- wraps = encaixar tudo na janela do programa pra vizualizar, não adiciona linhas
+- Usar <!-- comentário -->
+- ctrl+shift+P = "Surround with" -> digitar "wrap" e colocar a TAG
+
+		TAGS
+
+<p></p> = parágrafo
+<hgroup></hgroup> = Delimita um grupo de h1's
+<br/> = "break row" -> quebra de linha
+&nbsp; = "non-breaking spaces -> quantos espaços serão contados no nav 
+<wbr/> = "word break row" -> usar para quebrar a palavra [usar no meio da palavra] (quebra de emails) 
+@shy; = "Soft Hyphen" -> hífen caso necessário [usar no meio da palavra]
+<b></b> = "Bold" -> Negrito
+<i></i> = "Itálico"
+<em></em> = Enfase na palavra (Semanticamente melhor)
+<del></del> = Riscado
+<span></span> = Formatar pequenos textos em CSS
+<span style="text-decoration: underline;">[txt formatando]</span> = Sublinhado
+<span style="text-decoration: overline;">[txt formatando]</span> = Linha em cima
+<span style="text-decoration: none;">[txt formatando]</span> = Não herdar caracteristicas
+<pre></pre> = manter todos os espaços e enters do texto
+<code></code> = fonte de código
+<figure></figure> = semanticamente falar que há uma imagem
+<figcaption></figcaption> = Usado para fazer a descrição de uma imagem (Pode ser um texto composto)
+<nav></nav> = Criar barra de navegação
+<ol></ol> = Ordener Lists //<ol type="A[a, A, i, I, 1]" start="só numero[só se quiser]"></ol>
+<ul></ul> = Unordener Lists // lista com demarcador -> <ul type="disk [circle, square]"></ul>
+<li></li> = List Item (usar em cada título da lista)
+<a href="[link] target="_blank[nova aba]"></a> = Ancora -> base para link
+<section></section> = Sessão
+<aside></side> = lateral
+<footer></footer> = rodapé
+<table></table> = começar tabela
+<caption></caption> = titulo da tabela
+<tr></tr> = "table row" -> fazer a linha
+<td></td> = "table data" -> celula	// <td rowspan="[n de linha"> = a celula ocupar mais de uma linha
+<iframe src="" name="" id=""></iframe> = quadro de outro pagina ali
+<map name""> <area shape="rect[circle]" coords="x1,y1,x2,y2[centrox1,centroy1,raioempx//metade do total"
+	href="pagina.html#id[.class]" target="nameiframe"/></map> //www.image-map.net
+usemap="namedomap" referencia na tag img
+
+<audio id="" controls[aparece o player no browser]>
+<source src="[caminho]" type="audio/mp3"/>
+</audio>
+<video id="" poster="[thumb.jpg]" controls[aparece o player no browser]
+<source src="[caminho] type="video/mp4">
+</video>
+<link rel="stylesheet type="text/css" href="local/docss"/>
+//do YOUTUBE é necessário puxar o vídeo pela barra "incorporar" após clicar em compartilhar
+
+<form //formulário-forma//>
+<fieldset //campo//>
+<legend>[titulo do campo]</legend>
+</fieldset></form>
+<input type="[tipodeinput]" name="" id="" size="[nºdecaracteres]" maxlength="[nºdotammáximo" placeholder="[dicaescrever]"/>
+<label for="[id->p/indicar o que a palavra está ligada. Ex: acionar um campo de input]"></label>
+<select name="" id=""><option value="[valor a enviar "RJ"]>[inserir uma opção por option</option></select>
+<optgroup label=""></optgroup>
+<datalist>[cria uma lista de dados que necessitam de dentro do form colocar -> list="[iddatalist]"</datalist>
+
+ 	PODE SER INSERIDO CSS DIRETO NO HTML
+
+-> Dentro de uma tag usar o "style"
+-> Usar no Head para ser global
+
+
+		CSS
+
+/* comentário */
+@charset "utf-8";
+"backgroun-image:" = Local para imagem de fundo
+"color:" = Cor da letra 
+	- rgb(0, 0, 0) -> 
+	- #ffffff
+	- rgba(0, 0, 0, 1) -> ultimo é a transparencia de 0 a 1, usar decimal
+COMO REFERENCIAR: tag.classe proxtag{}
+		  .classe{}
+		  #id{}
+		  tag.#id{} 
+
+border: tam solid cor;
+box-shadow: tam tam tam tam cor;
+position: absolute;	//O pai tem que colocar uma position:relative;
+top: 0;			//considerando o container
+:hover = "ao passar o mouse" -> text.class:hover proxtag{}
+transition: 1s; (junto com o :hover da o "aparecer e desaparecer")
+importar fontes do google fontes com o @import + link e referenciar como pede
+overflow: hidden; [classe]::-webkit-scrollbar{}
+
+PADDING = MARGEM DENTRO DO BLOCO
+MARGIN = MARGEM FORA DO BLOCO
+
+		JAVASCRIPT
+
+<script language="javascript" src="_javascript/funcoes.js"></script>
