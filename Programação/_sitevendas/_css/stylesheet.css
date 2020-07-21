@@ -1,0 +1,61 @@
+body{
+    background-color: lightblue;
+}
+
+div .texto{
+    border: 5px solid #000000;
+    padding-left: 10px;
+}
+
+.texto{
+    font-family: Arial, Helvetica, sans-serif;
+    /* mudar font-size para em */
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0px;
+    border: 1px solid blue !important;
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50pt;
+}
+
+.produto {
+    padding: 5px !important;
+}
+
+.imagem{
+    max-width: 90%;
+    padding: 5%;
+    margin: 5%;
+    border: 5px solid blue;
+}
+
+.imgProduto {
+    height: 90%;
+}
+
+.info{
+    display: flex;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.botaoVenda {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: #ffffff;
+    border: 2px solid blue;
+    text-align: center;
+    background: blue;
+}
+
+.botaoVenda:hover {
+    background: magenta;
+}
